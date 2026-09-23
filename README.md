@@ -1,48 +1,57 @@
 # FlowDesk
 
-FlowDesk is a full-stack support ticket management application built for managing customer requests and day-to-day support work.
+FlowDesk is a full-stack support ticket management application built with React, ASP.NET Core and SQL Server.
 
-The application allows users to create and manage tickets, assign them to team members, track deadlines and statuses, add comments, and keep a history of ticket activity. It also includes dashboards and reports for monitoring workload and team performance.
+It helps support teams manage customer requests, assign tickets, track deadlines and monitor team performance.
+
+## Screenshots
+
+![FlowDesk Dashboard](screenshots/1.png)
+
+![FlowDesk Tickets](screenshots/2.png)
+
+![FlowDesk Ticket Details](screenshots/3.png)
+
+![FlowDesk Reports](screenshots/4.png)
+
+![FlowDesk Team Performance](screenshots/5.png)
 
 ## Features
 
-* Ticket creation and management
-* Ticket assignment and status tracking
-* Customer management
-* Comments and internal notes
-* Ticket activity history
-* Due dates and overdue ticket tracking
-* Team workload and performance reports
-* Dashboard with support metrics
-* CSV report export
-* User authentication
+- Create and manage support tickets
+- Assign tickets to team members
+- Track ticket status and deadlines
+- Manage customers
+- Add comments and internal notes
+- View ticket activity history
+- Monitor team workload and performance
+- View reports and support metrics
+- Export report data to CSV
+- User authentication
 
-## Technologies
+## Tech Stack
 
-**Frontend:** React, TypeScript, Vite
-**Backend:** ASP.NET Core, C#, Entity Framework Core
-**Database:** SQL Server
-**Authentication:** JWT, BCrypt
+- React
+- TypeScript
+- ASP.NET Core
+- C#
+- Entity Framework Core
+- SQL Server
+- JWT Authentication
 
-## Running the project
+## Running locally
 
 Make sure you have .NET 10, SQL Server, Node.js and npm installed.
 
-Update the SQL Server connection string in:
+Update the database connection string in:
 
 `backend/FlowDesk.Api/appsettings.json`
 
 Then run `FlowDesk.Api` from Visual Studio.
 
-The database and demo data are created automatically the first time the application runs.
+The database and demo data are created automatically when the application runs for the first time.
 
-### Demo login
+### Demo Login
 
-Email: `admin@flowdesk.dev`
+Email: `admin@flowdesk.dev`  
 Password: `Demo123!`
-
-## Project structure
-
-The React frontend is located in the `frontend` folder and the ASP.NET Core API in `backend/FlowDesk.Api`.
-
-The frontend communicates with the API through REST endpoints, while Entity Framework Core is used for database access.
