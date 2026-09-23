@@ -1,0 +1,12 @@
+FLOWDESK - VISUAL STUDIO
+
+1. Open FlowDesk.sln in Visual Studio 2022.
+2. Make FlowDesk.Api the startup project.
+3. Make sure SQL Server is running and adjust backend/FlowDesk.Api/appsettings.json if your server name is not localhost.
+4. Press F5.
+
+The .NET build automatically runs npm install and vite build for the React frontend, then copies the frontend build into wwwroot.
+
+Demo login:
+admin@flowdesk.dev
+Demo123!
